@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Rounding Tutor - Welcome{% endblock %}
+
+{% block header_title %}Rounding Tutor{% endblock %}
+
+{% block content %}
+<div class="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-8">
+    <div class="mb-8">
+        <h2 class="text-xl font-semibold mb-4">Thank you for giving your time to test this prototype</h2>
+        <p class="mb-4">
+            My aim is to design a fully personalised AI tutor. What you are about to see is the first prototype.
+            Your feedack on this prototype is invaluable to its future development. There are a few things to bear in mind:
+        </p>
+        <ul class="list-disc pl-8 mb-6">
+            <li>This prototype teaches only one topic</li>
+            <li>This is a bare bones prototype
+            <li>At this stage I am mainly looking for feedback on how well the tutor teaches</li>
+            <li>But any other ideas you have related to design, use of AI or whatever you can think of are also greatly appreciated!</li>
+        </ul>
+        <p class="mb-6">
+            You may find this lesson quite basic. If that is the case, consider it from the perspective of a child when giving your feedback.
+        </p>
+    </div>
+    <div class="text-center">
+        <a href="{{ url_for('lesson_intro') }}" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition-all">
+            Start Lesson
+        </a>
+    </div>
+</div>
+{% endblock %}
